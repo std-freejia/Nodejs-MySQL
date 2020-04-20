@@ -8,7 +8,7 @@ CREATE TABLE `author` (
   `name` varchar(20) NOT NULL,
   `profile` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
 --
 -- Dumping data for table `author`
@@ -29,7 +29,7 @@ CREATE TABLE `topic` (
   `created` datetime NOT NULL,
   `author_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
 --
 -- Dumping data for table `topic`
